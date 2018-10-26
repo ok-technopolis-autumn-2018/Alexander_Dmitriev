@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO MVC</title>
+</head>
+<body>
+
+<h1>todos</h1>
+
+<div class="todo-board"></div>
+
+<form class="todo-creator">
+    <button class="todo-check" aria-label="Check all items"></button>
+    <input class="todo-text-input" type="text" placeholder="What needs to be done?" aria-label="Input new todo text"/>
+</form>
+
+<div class="todo-list">
+    <div class="todo-item">
+        <input type="checkbox" class="todo-item-ready-marker" aria-label="Mark todo as ready"/>
+        <div class="todo-item-text">HTML</div>
+        <button class="todo-item-remove" aria-label="Delete todo"></button>
+    </div>
+    <div class="todo-item">
+        <input type="checkbox" checked class="todo-item-ready-marker" aria-label="Mark todo as unready"/>
+        <div class="todo-item-text">CSS</div>
+        <button class="todo-item-remove" aria-label="Delete todo"></button>
+    </div>
+    <div class="todo-item">
+        <input type="checkbox" class="todo-item-ready-marker" aria-label="Mark todo as ready"/>
+        <div class="todo-item-text">JS</div>
+        <button class="todo-item-remove" aria-label="Delete todo"></button>
+    </div>
+    <div class="todo-item">
+        <input type="checkbox" class="todo-item-ready-marker" aria-label="Mark todo as ready"/>
+        <div class="todo-item-text">JS tools</div>
+        <button class="todo-item-remove" aria-label="Delete todo"></button>
+    </div>
+
+    <div class="todos-toolbar">
+        <div class="todos-toolbar_unready-counter">3 items left</div>
+        <div class="todos-toolbar_filters">
+            <button class="todos-toolbar_filter __selected" aria-label="Filter: All, is selected">All</button>
+            <button class="todos-toolbar_filter" aria-label="Filter: Active">Active</button>
+            <button class="todos-toolbar_filter" aria-label="Filter: Completed">Completed</button>
+        </div>
+
+        <button class="todos-toolbar_clear-completed">Clear completed</button>
+
+    </div>
+</div>
+
+</body>
+</html>
