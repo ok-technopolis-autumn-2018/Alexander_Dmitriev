@@ -84,5 +84,6 @@
 (min-resolution: 1.5dppx) {
     .todos-list_item_remove {
         background: url(../../../images/close@2x.png) no-repeat 0 0;
+		background-size: contain;
     }
 }

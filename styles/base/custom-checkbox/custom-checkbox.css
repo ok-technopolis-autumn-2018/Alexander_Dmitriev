@@ -42,14 +42,15 @@
     top: 50%;
     left: 50%;
     margin: -10px;
-    background: url(../../../images/completed.png);
+    background: url(../../../images/completed.png) no-repeat 0 0;
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5),
 (min-resolution: 120dpi),
 (min-resolution: 1.5dppx) {
     .custom-checkbox_target:checked ~ .custom-checkbox_visual .custom-checkbox_visual_icon {
-        background: url(../../../images/completed@2x.png);
+        background: url(../../../images/completed@2x.png) no-repeat 0 0;
+		background-size: contain;
     }
 }
 
