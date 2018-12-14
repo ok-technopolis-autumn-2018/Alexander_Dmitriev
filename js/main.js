@@ -93,10 +93,28 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 		
     });
+	
+	list.addEventListener('keydown', function (e) {
+		if(e.target.className === 'todos-list_item_text'){
+			var hard_lines = 1;
+			var last = 0;
+			while ( true ) {
+			last = e.target.value.toString().indexOf("\n", last+1);
+			hard_lines ++;
+			if ( last == -1 ) break;
+			}
+			if(e.keyCode === 13){
+				e.target.rows = hard_lines;
+			}
+			else {
+				e.target.rows = hard_lines - 1;
+			}
+		}
+		
+		});
 
 
 });
-
 function add(text) {
     var header = '<div class="todos-list_item' + (mode === 'completed' ? ' __hidden' : '') + '">';
 
