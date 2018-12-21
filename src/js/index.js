@@ -92,7 +92,6 @@ function add(text) {
 
     var items = document.querySelectorAll('.todos-list_item');
     checkItem(items[items.length - 1]);
-    all++;
     Count();
 }
 
@@ -103,7 +102,7 @@ function Count() {
     completed = 0;
     for (var i = 0; i < all; i++)
         if (list[i].classList.contains('__completed'))
-            completed++;
+            completed = completed + 1;
 
     document.querySelector('.todos-toolbar_unready-counter').innerHTML = (all - completed) + ' items left';
     if (all > 0)
