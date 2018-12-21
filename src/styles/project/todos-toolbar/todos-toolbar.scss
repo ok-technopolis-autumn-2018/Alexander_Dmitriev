@@ -1,0 +1,52 @@
+.todos-toolbar {
+    border-top: 1px solid #e6e6e6;
+    padding: 12px;
+}
+
+.todos-toolbar.__no-border {
+    border-top: 0;
+}
+
+.todos-toolbar_unready-counter {
+    font-size: 14px;
+    font-family: HelveticaNeueLight, Arial, sans-serif;
+    color: #888888;
+    margin-right: auto;
+}
+
+.filters.todos-toolbar_filters {
+    text-align: center;
+}
+
+.todos-toolbar_clear-completed {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 14px;
+    color: #888888;
+    font-family: HelveticaNeueLight, Arial, sans-serif;
+    margin-left: auto;
+    float: right;
+}
+
+.todos-toolbar_clear-completed:hover {
+    cursor: pointer;
+}
+
+.todos-toolbar_filters .filters-item {
+    outline: none;
+    background: none;
+    font-size: 14px;
+    color: #888888;
+    border: 1px solid transparent;
+    font-family: HelveticaNeueLight, Arial, sans-serif;
+}
+
+.filters-item:hover {
+    cursor: pointer;
+}
+
+.todos-toolbar_filters .filters-item.__selected {
+    border: 1px solid #ebdfdf;
+    border-radius: 2px;
+}
