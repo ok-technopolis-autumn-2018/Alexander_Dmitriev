@@ -11,7 +11,7 @@
     font-size: 14px;
     font-family: HelveticaNeueLight, Arial, sans-serif;
     color: #888888;
-    margin-right: auto;
+    margin: auto auto auto 0;
 }
 
 .filters.todos-toolbar_filters {
@@ -29,8 +29,13 @@
     float: right;
 }
 
+.todos-toolbar_clear-completed.__hidden {
+    visibility: hidden;
+}
+
 .todos-toolbar_clear-completed:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .todos-toolbar_filters .filters-item {
@@ -44,9 +49,14 @@
 
 .filters-item:hover {
     cursor: pointer;
+    border-color: rgba(175, 47, 47, 0.1);
+}
+
+.filters-item{
+    padding: 3px 7px;
+    border-radius: 3px;
 }
 
 .todos-toolbar_filters .filters-item.__selected {
     border: 1px solid #ebdfdf;
-    border-radius: 2px;
 }

@@ -57,6 +57,10 @@
     overflow-x: hidden;
 }
 
+.todos-list_item_text:hover{
+    cursor: text;
+}
+
 .todos-list_item_remove {
     float: right;
     margin-left: 16px;

@@ -10,12 +10,12 @@
 
     <h1 class="todo-title">Todos</h1>
 
-    <div class="todo-board __has-content">
+    <div class="todo-board">
 
         <form class="todo-creator">
-            <button class="todo-creator_check-all" aria-label="Check all items as done"></button>
+            <button class="todo-creator_check-all jsTodoCheckAllAsDone" aria-label="Check all items as done"></button>
             <div class="todo-creator_text-input-w">
-                <input class="todo-creator_text-input" type="text" placeholder="What needs to be done?"
+                <input class="todo-creator_text-input jsTodoText" type="text" placeholder="What needs to be done?"
                        aria-label="Input new todo text"/>
             </div>
         </form>
@@ -25,7 +25,7 @@
 
         </div>
 
-        <script type="text/html" id="listItem">
+        <script type="text/html" id="todoItemTemplate">
             <div class="todos-list_item">
                 <div class="custom-checkbox todos-list_item_ready-marker">
                     <input type="checkbox" class="custom-checkbox_target" aria-label="Mark todo as ready"/>
@@ -35,7 +35,7 @@
                 </div>
                 <button class="todos-list_item_remove" aria-label="Delete todo"></button>
                 <div class="todos-list_item_text-w">
-                    <textarea class="todos-list_item_text" rows="1">{text}</textarea>
+                    <div contenteditable="true" class="todos-list_item_text">{text}</div>
                 </div>
             </div>
         </script>
@@ -49,7 +49,7 @@
                 <button id="active" class="filters-item" aria-label="Filter: Active">Active</button>
                 <button id="completed" class="filters-item" aria-label="Filter: Completed">Completed</button>
             </div>
-            <button class="todos-toolbar_clear-completed">Clear completed</button>
+            <button class="todos-toolbar_clear-completed __hidden">Clear completed</button>
         </div>
 
     </div>
