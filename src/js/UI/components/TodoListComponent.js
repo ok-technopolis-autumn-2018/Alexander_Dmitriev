@@ -1,7 +1,7 @@
 import {createFromTemplate} from '../../utils/templatesManager';
 
-const COMPLETED_VALUE = '__completed';
-const HIDDEN_VALUE = '__hidden';
+import {COMPLETED_VALUE} from  '../../lib/CONST';
+import {HIDDEN_VALUE} from  '../../lib/CONST';
 
 export class TodoListComponent {
 

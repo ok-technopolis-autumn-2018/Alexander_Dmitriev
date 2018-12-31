@@ -1,7 +1,7 @@
 import {Eventable} from '../../lib/Eventable';
+import {COMPLETED_VALUE} from  '../../lib/CONST';
+import {HIDDEN_VALUE} from  '../../lib/CONST';
 
-const COMPLETED_VALUE = '__completed';
-const HIDDEN_VALUE = '__hidden';
 var filter = 'all';
 
 export class TodoList extends Eventable {

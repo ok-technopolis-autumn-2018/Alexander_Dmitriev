@@ -1,4 +1,4 @@
-const HIDDEN_VALUE = '__hidden';
+import {HIDDEN_VALUE} from  '../../lib/CONST';
 import {Eventable} from '../../lib/Eventable';
 
 export class TodoActionsBar extends Eventable {
